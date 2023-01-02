@@ -143,7 +143,9 @@ public class SchoolManagement {
 		}
 
 		if (allStudent.containsKey(id)) {
-			System.out.print(id + " " + Arrays.toString(allStudent.get(id)));
+			System.out.print(id+" ");
+			for (int i=0; i<allStudent.get(id).length; i++)
+			System.out.print(allStudent.get(id)[i]+" ");
 		}
 	}
 }
